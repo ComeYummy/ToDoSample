@@ -126,13 +126,13 @@
 		C5706AE524B595C000284E45 /* ToDoSample */ = {
 			isa = PBXGroup;
 			children = (
-				C5706AE624B595C000284E45 /* AppDelegate.swift */,
-				C5706AE824B595C000284E45 /* SceneDelegate.swift */,
+				C5706B1624B59F5800284E45 /* Application */,
+				C5706B1C24B59FE400284E45 /* Models */,
+				C5706B1E24B5A00900284E45 /* Presenters */,
+				C5706B1D24B59FED00284E45 /* Views */,
+				C5706B1B24B59FC100284E45 /* SupportingFiles */,
 				C5706AEA24B595C000284E45 /* ViewController.swift */,
 				C5706AEC24B595C000284E45 /* Main.storyboard */,
-				C5706AEF24B595C300284E45 /* Assets.xcassets */,
-				C5706AF124B595C300284E45 /* LaunchScreen.storyboard */,
-				C5706AF424B595C300284E45 /* Info.plist */,
 			);
 			path = ToDoSample;
 			sourceTree = "<group>";
@@ -153,6 +153,86 @@
 				C5706B0A24B595C300284E45 /* Info.plist */,
 			);
 			path = ToDoSampleUITests;
+			sourceTree = "<group>";
+		};
+		C5706B1624B59F5800284E45 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C5706B1724B59F7200284E45 /* AppDelegate */,
+				C5706B1924B59F9600284E45 /* LaunchScreen */,
+				C5706B1824B59F8800284E45 /* Extension */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C5706B1724B59F7200284E45 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C5706AE624B595C000284E45 /* AppDelegate.swift */,
+				C5706AE824B595C000284E45 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C5706B1824B59F8800284E45 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C5706B1924B59F9600284E45 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C5706AF124B595C300284E45 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		C5706B1B24B59FC100284E45 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C5706AEF24B595C300284E45 /* Assets.xcassets */,
+				C5706AF424B595C300284E45 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C5706B1C24B59FE400284E45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5706B2024B5A03400284E45 /* Repositories */,
+				C5706B1F24B5A02B00284E45 /* Entities */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C5706B1D24B59FED00284E45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5706B1E24B5A00900284E45 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		C5706B1F24B5A02B00284E45 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C5706B2024B5A03400284E45 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		C7CDD7283F2370031253E11F /* Pods */ = {
