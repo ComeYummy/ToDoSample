@@ -25,6 +25,33 @@
 		C5706B3424B5AD2000284E45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5706B3324B5AD2000284E45 /* GoogleService-Info.plist */; };
 		C5706B3524B5AD2000284E45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5706B3324B5AD2000284E45 /* GoogleService-Info.plist */; };
 		C5706B3624B5AD2000284E45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5706B3324B5AD2000284E45 /* GoogleService-Info.plist */; };
+		C5706B3A24B5AE4100284E45 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B3824B5AE4100284E45 /* SignUpViewController.swift */; };
+		C5706B3B24B5AE4100284E45 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B3824B5AE4100284E45 /* SignUpViewController.swift */; };
+		C5706B3C24B5AE4100284E45 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B3824B5AE4100284E45 /* SignUpViewController.swift */; };
+		C5706B3D24B5AE4100284E45 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5706B3924B5AE4100284E45 /* SignUpViewController.xib */; };
+		C5706B3E24B5AE4100284E45 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5706B3924B5AE4100284E45 /* SignUpViewController.xib */; };
+		C5706B3F24B5AE4100284E45 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5706B3924B5AE4100284E45 /* SignUpViewController.xib */; };
+		C5706B4324B5B07C00284E45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B4124B5B07C00284E45 /* HomeViewController.swift */; };
+		C5706B4424B5B07C00284E45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B4124B5B07C00284E45 /* HomeViewController.swift */; };
+		C5706B4524B5B07C00284E45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B4124B5B07C00284E45 /* HomeViewController.swift */; };
+		C5706B4624B5B07C00284E45 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5706B4224B5B07C00284E45 /* HomeViewController.xib */; };
+		C5706B4724B5B07C00284E45 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5706B4224B5B07C00284E45 /* HomeViewController.xib */; };
+		C5706B4824B5B07C00284E45 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5706B4224B5B07C00284E45 /* HomeViewController.xib */; };
+		C5706B4C24B5B0AC00284E45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B4A24B5B0AC00284E45 /* MainViewController.swift */; };
+		C5706B4D24B5B0AC00284E45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B4A24B5B0AC00284E45 /* MainViewController.swift */; };
+		C5706B4E24B5B0AC00284E45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B4A24B5B0AC00284E45 /* MainViewController.swift */; };
+		C5706B4F24B5B0AC00284E45 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5706B4B24B5B0AC00284E45 /* MainViewController.xib */; };
+		C5706B5024B5B0AC00284E45 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5706B4B24B5B0AC00284E45 /* MainViewController.xib */; };
+		C5706B5124B5B0AC00284E45 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5706B4B24B5B0AC00284E45 /* MainViewController.xib */; };
+		C5706B5424B5B37E00284E45 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B5324B5B37E00284E45 /* SignUpPresenter.swift */; };
+		C5706B5524B5B37E00284E45 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B5324B5B37E00284E45 /* SignUpPresenter.swift */; };
+		C5706B5624B5B37E00284E45 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B5324B5B37E00284E45 /* SignUpPresenter.swift */; };
+		C5706B5824B5BBB400284E45 /* FirebaseAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B5724B5BBB400284E45 /* FirebaseAuthRepository.swift */; };
+		C5706B5924B5BBB400284E45 /* FirebaseAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B5724B5BBB400284E45 /* FirebaseAuthRepository.swift */; };
+		C5706B5A24B5BBB400284E45 /* FirebaseAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B5724B5BBB400284E45 /* FirebaseAuthRepository.swift */; };
+		C5706B5C24B5BF8000284E45 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B5B24B5BF8000284E45 /* Alert.swift */; };
+		C5706B5D24B5BF8000284E45 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B5B24B5BF8000284E45 /* Alert.swift */; };
+		C5706B5E24B5BF8000284E45 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B5B24B5BF8000284E45 /* Alert.swift */; };
 		DB13A2E6E4B3579469F20CBF /* Pods_ToDoSample_ToDoSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095953D309C763A6C9191366 /* Pods_ToDoSample_ToDoSampleUITests.framework */; };
 		FBC761D4E5DF96DCE99AAB67 /* Pods_ToDoSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CED9DEC4EF41A66C4DBAE35 /* Pods_ToDoSample.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +102,15 @@
 		C5706B2D24B5A9F100284E45 /* AppRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootViewController.swift; sourceTree = "<group>"; };
 		C5706B2E24B5A9F100284E45 /* AppRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppRootViewController.xib; sourceTree = "<group>"; };
 		C5706B3324B5AD2000284E45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C5706B3824B5AE4100284E45 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C5706B3924B5AE4100284E45 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		C5706B4124B5B07C00284E45 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C5706B4224B5B07C00284E45 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C5706B4A24B5B0AC00284E45 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C5706B4B24B5B0AC00284E45 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		C5706B5324B5B37E00284E45 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		C5706B5724B5BBB400284E45 /* FirebaseAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthRepository.swift; sourceTree = "<group>"; };
+		C5706B5B24B5BF8000284E45 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		D45D4C4FAD7C0EC5DE7CD9DD /* Pods-ToDoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoSample.release.xcconfig"; path = "Target Support Files/Pods-ToDoSample/Pods-ToDoSample.release.xcconfig"; sourceTree = "<group>"; };
 		D4714A4C37BA3272F5AED3F6 /* Pods_ToDoSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -240,6 +276,7 @@
 		C5706B1E24B5A00900284E45 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				C5706B5224B5B36D00284E45 /* SignUp */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -247,6 +284,7 @@
 		C5706B1F24B5A02B00284E45 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				C5706B5B24B5BF8000284E45 /* Alert.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -254,6 +292,7 @@
 		C5706B2024B5A03400284E45 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				C5706B5724B5BBB400284E45 /* FirebaseAuthRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -269,6 +308,9 @@
 		C5706B2A24B5A9AC00284E45 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C5706B4924B5B08C00284E45 /* Main */,
+				C5706B4024B5B06300284E45 /* Home */,
+				C5706B3724B5AE1F00284E45 /* SignUp */,
 				C5706B2C24B5A9CD00284E45 /* AppRoot */,
 			);
 			path = ViewControllers;
@@ -288,6 +330,41 @@
 				C5706B2E24B5A9F100284E45 /* AppRootViewController.xib */,
 			);
 			path = AppRoot;
+			sourceTree = "<group>";
+		};
+		C5706B3724B5AE1F00284E45 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				C5706B3824B5AE4100284E45 /* SignUpViewController.swift */,
+				C5706B3924B5AE4100284E45 /* SignUpViewController.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		C5706B4024B5B06300284E45 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C5706B4124B5B07C00284E45 /* HomeViewController.swift */,
+				C5706B4224B5B07C00284E45 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C5706B4924B5B08C00284E45 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C5706B4A24B5B0AC00284E45 /* MainViewController.swift */,
+				C5706B4B24B5B0AC00284E45 /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C5706B5224B5B36D00284E45 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				C5706B5324B5B37E00284E45 /* SignUpPresenter.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		C7CDD7283F2370031253E11F /* Pods */ = {
@@ -415,7 +492,10 @@
 				C5706AF324B595C300284E45 /* LaunchScreen.storyboard in Resources */,
 				C5706AF024B595C300284E45 /* Assets.xcassets in Resources */,
 				C5706B3424B5AD2000284E45 /* GoogleService-Info.plist in Resources */,
+				C5706B4F24B5B0AC00284E45 /* MainViewController.xib in Resources */,
 				C5706B3024B5A9F100284E45 /* AppRootViewController.xib in Resources */,
+				C5706B3D24B5AE4100284E45 /* SignUpViewController.xib in Resources */,
+				C5706B4624B5B07C00284E45 /* HomeViewController.xib in Resources */,
 				C5706AEE24B595C000284E45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,7 +504,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5706B3E24B5AE4100284E45 /* SignUpViewController.xib in Resources */,
 				C5706B3524B5AD2000284E45 /* GoogleService-Info.plist in Resources */,
+				C5706B4724B5B07C00284E45 /* HomeViewController.xib in Resources */,
+				C5706B5024B5B0AC00284E45 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +515,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5706B3F24B5AE4100284E45 /* SignUpViewController.xib in Resources */,
 				C5706B3624B5AD2000284E45 /* GoogleService-Info.plist in Resources */,
+				C5706B4824B5B07C00284E45 /* HomeViewController.xib in Resources */,
+				C5706B5124B5B0AC00284E45 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,11 +633,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5706AEB24B595C000284E45 /* ViewController.swift in Sources */,
+				C5706B4C24B5B0AC00284E45 /* MainViewController.swift in Sources */,
 				C5706B2924B5A8B300284E45 /* AppDelegate+IQKeyboardManagerSwift.swift in Sources */,
 				C5706B2F24B5A9F100284E45 /* AppRootViewController.swift in Sources */,
 				C5706AE724B595C000284E45 /* AppDelegate.swift in Sources */,
 				C5706AE924B595C000284E45 /* SceneDelegate.swift in Sources */,
+				C5706B5C24B5BF8000284E45 /* Alert.swift in Sources */,
+				C5706B5824B5BBB400284E45 /* FirebaseAuthRepository.swift in Sources */,
+				C5706B5424B5B37E00284E45 /* SignUpPresenter.swift in Sources */,
+				C5706B4324B5B07C00284E45 /* HomeViewController.swift in Sources */,
 				C5706B2324B5A20000284E45 /* Appearance.swift in Sources */,
+				C5706B3A24B5AE4100284E45 /* SignUpViewController.swift in Sources */,
 				C5706B2524B5A30500284E45 /* UIColor+.swift in Sources */,
 				C5706B2724B5A89600284E45 /* AppDelegate+Firebase.swift in Sources */,
 			);
@@ -561,7 +653,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5706B3B24B5AE4100284E45 /* SignUpViewController.swift in Sources */,
 				C5706AFE24B595C300284E45 /* ToDoSampleTests.swift in Sources */,
+				C5706B5924B5BBB400284E45 /* FirebaseAuthRepository.swift in Sources */,
+				C5706B4424B5B07C00284E45 /* HomeViewController.swift in Sources */,
+				C5706B5524B5B37E00284E45 /* SignUpPresenter.swift in Sources */,
+				C5706B4D24B5B0AC00284E45 /* MainViewController.swift in Sources */,
+				C5706B5D24B5BF8000284E45 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,7 +667,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5706B3C24B5AE4100284E45 /* SignUpViewController.swift in Sources */,
 				C5706B0924B595C300284E45 /* ToDoSampleUITests.swift in Sources */,
+				C5706B5A24B5BBB400284E45 /* FirebaseAuthRepository.swift in Sources */,
+				C5706B4524B5B07C00284E45 /* HomeViewController.swift in Sources */,
+				C5706B5624B5B37E00284E45 /* SignUpPresenter.swift in Sources */,
+				C5706B4E24B5B0AC00284E45 /* MainViewController.swift in Sources */,
+				C5706B5E24B5BF8000284E45 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

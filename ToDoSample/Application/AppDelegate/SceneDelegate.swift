@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // position and size
         window?.frame = UIScreen.main.bounds
 
-        // root viewcontroller
+        // root viewcontrollerを初期画面とする
         window?.rootViewController = AppRootViewController()
         // backgorund
         window?.backgroundColor = UIColor.theme
