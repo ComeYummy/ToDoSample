@@ -11,10 +11,14 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        // Appearnceの初期設定(navigation barなど)
+        Appearance.initialSetup()
+
+        configureFirebase()
+        configureIQKeyboardManagerSwift()
+
         return true
     }
 

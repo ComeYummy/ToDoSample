@@ -16,6 +16,15 @@
 		C5706AF324B595C300284E45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5706AF124B595C300284E45 /* LaunchScreen.storyboard */; };
 		C5706AFE24B595C300284E45 /* ToDoSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706AFD24B595C300284E45 /* ToDoSampleTests.swift */; };
 		C5706B0924B595C300284E45 /* ToDoSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B0824B595C300284E45 /* ToDoSampleUITests.swift */; };
+		C5706B2324B5A20000284E45 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B2224B5A20000284E45 /* Appearance.swift */; };
+		C5706B2524B5A30500284E45 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B2424B5A30500284E45 /* UIColor+.swift */; };
+		C5706B2724B5A89600284E45 /* AppDelegate+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B2624B5A89600284E45 /* AppDelegate+Firebase.swift */; };
+		C5706B2924B5A8B300284E45 /* AppDelegate+IQKeyboardManagerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B2824B5A8B300284E45 /* AppDelegate+IQKeyboardManagerSwift.swift */; };
+		C5706B2F24B5A9F100284E45 /* AppRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5706B2D24B5A9F100284E45 /* AppRootViewController.swift */; };
+		C5706B3024B5A9F100284E45 /* AppRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5706B2E24B5A9F100284E45 /* AppRootViewController.xib */; };
+		C5706B3424B5AD2000284E45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5706B3324B5AD2000284E45 /* GoogleService-Info.plist */; };
+		C5706B3524B5AD2000284E45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5706B3324B5AD2000284E45 /* GoogleService-Info.plist */; };
+		C5706B3624B5AD2000284E45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5706B3324B5AD2000284E45 /* GoogleService-Info.plist */; };
 		DB13A2E6E4B3579469F20CBF /* Pods_ToDoSample_ToDoSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095953D309C763A6C9191366 /* Pods_ToDoSample_ToDoSampleUITests.framework */; };
 		FBC761D4E5DF96DCE99AAB67 /* Pods_ToDoSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CED9DEC4EF41A66C4DBAE35 /* Pods_ToDoSample.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +68,13 @@
 		C5706B0424B595C300284E45 /* ToDoSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5706B0824B595C300284E45 /* ToDoSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoSampleUITests.swift; sourceTree = "<group>"; };
 		C5706B0A24B595C300284E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5706B2224B5A20000284E45 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		C5706B2424B5A30500284E45 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		C5706B2624B5A89600284E45 /* AppDelegate+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Firebase.swift"; sourceTree = "<group>"; };
+		C5706B2824B5A8B300284E45 /* AppDelegate+IQKeyboardManagerSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+IQKeyboardManagerSwift.swift"; sourceTree = "<group>"; };
+		C5706B2D24B5A9F100284E45 /* AppRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootViewController.swift; sourceTree = "<group>"; };
+		C5706B2E24B5A9F100284E45 /* AppRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppRootViewController.xib; sourceTree = "<group>"; };
+		C5706B3324B5AD2000284E45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D45D4C4FAD7C0EC5DE7CD9DD /* Pods-ToDoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoSample.release.xcconfig"; path = "Target Support Files/Pods-ToDoSample/Pods-ToDoSample.release.xcconfig"; sourceTree = "<group>"; };
 		D4714A4C37BA3272F5AED3F6 /* Pods_ToDoSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -159,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				C5706B1724B59F7200284E45 /* AppDelegate */,
+				C5706B2124B5A1D400284E45 /* Appearance */,
 				C5706B1924B59F9600284E45 /* LaunchScreen */,
 				C5706B1824B59F8800284E45 /* Extension */,
 			);
@@ -169,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				C5706AE624B595C000284E45 /* AppDelegate.swift */,
+				C5706B2624B5A89600284E45 /* AppDelegate+Firebase.swift */,
+				C5706B2824B5A8B300284E45 /* AppDelegate+IQKeyboardManagerSwift.swift */,
 				C5706AE824B595C000284E45 /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
@@ -177,6 +196,7 @@
 		C5706B1824B59F8800284E45 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C5706B2424B5A30500284E45 /* UIColor+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -192,6 +212,7 @@
 		C5706B1B24B59FC100284E45 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				C5706B3324B5AD2000284E45 /* GoogleService-Info.plist */,
 				C5706AEF24B595C300284E45 /* Assets.xcassets */,
 				C5706AF424B595C300284E45 /* Info.plist */,
 			);
@@ -210,6 +231,8 @@
 		C5706B1D24B59FED00284E45 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C5706B2B24B5A9C500284E45 /* Views */,
+				C5706B2A24B5A9AC00284E45 /* ViewControllers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,6 +256,38 @@
 			children = (
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C5706B2124B5A1D400284E45 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				C5706B2224B5A20000284E45 /* Appearance.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		C5706B2A24B5A9AC00284E45 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5706B2C24B5A9CD00284E45 /* AppRoot */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C5706B2B24B5A9C500284E45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5706B2C24B5A9CD00284E45 /* AppRoot */ = {
+			isa = PBXGroup;
+			children = (
+				C5706B2D24B5A9F100284E45 /* AppRootViewController.swift */,
+				C5706B2E24B5A9F100284E45 /* AppRootViewController.xib */,
+			);
+			path = AppRoot;
 			sourceTree = "<group>";
 		};
 		C7CDD7283F2370031253E11F /* Pods */ = {
@@ -359,6 +414,8 @@
 			files = (
 				C5706AF324B595C300284E45 /* LaunchScreen.storyboard in Resources */,
 				C5706AF024B595C300284E45 /* Assets.xcassets in Resources */,
+				C5706B3424B5AD2000284E45 /* GoogleService-Info.plist in Resources */,
+				C5706B3024B5A9F100284E45 /* AppRootViewController.xib in Resources */,
 				C5706AEE24B595C000284E45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5706B3524B5AD2000284E45 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +432,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5706B3624B5AD2000284E45 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,8 +547,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5706AEB24B595C000284E45 /* ViewController.swift in Sources */,
+				C5706B2924B5A8B300284E45 /* AppDelegate+IQKeyboardManagerSwift.swift in Sources */,
+				C5706B2F24B5A9F100284E45 /* AppRootViewController.swift in Sources */,
 				C5706AE724B595C000284E45 /* AppDelegate.swift in Sources */,
 				C5706AE924B595C000284E45 /* SceneDelegate.swift in Sources */,
+				C5706B2324B5A20000284E45 /* Appearance.swift in Sources */,
+				C5706B2524B5A30500284E45 /* UIColor+.swift in Sources */,
+				C5706B2724B5A89600284E45 /* AppDelegate+Firebase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,7 +729,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8H2B9686D;
-				INFOPLIST_FILE = ToDoSample/Info.plist;
+				INFOPLIST_FILE = ToDoSample/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -684,7 +748,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8H2B9686D;
-				INFOPLIST_FILE = ToDoSample/Info.plist;
+				INFOPLIST_FILE = ToDoSample/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
