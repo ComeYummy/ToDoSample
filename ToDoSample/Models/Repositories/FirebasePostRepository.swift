@@ -49,10 +49,15 @@ class FirebasePostRepository {
     }
 
     func deletePost(_ taskID: String, completion: @escaping (Alert?) -> Void) {
-        db.collection(postsCollectionName).document(taskID).delete()
-        completion(nil)
+        db.collection(postsCollectionName).document(taskID).delete { error in
+            if let error = error as NSError? {
+                guard let alert = self.convertToErrorAlert(error) else { return }
+                completion(alert)
+            } else {
+                completion(nil)
+            }
+        }
     }
-
 
     private func convertToErrorAlert(_ error: NSError) -> Alert? {
         let message = "エラー: \(error.localizedDescription)"
