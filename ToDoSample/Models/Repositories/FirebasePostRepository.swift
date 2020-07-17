@@ -9,14 +9,6 @@
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-//protocol FirebasePostRepositoryDelegate: class {
-//    func didCreatePost()
-//    func didReadPosts(_ posts: [Post])
-//    func didUpdatePost()
-//    func didDeletePost()
-//    func didPostError(_ alert: Alert)
-//}
-
 class FirebasePostRepository {
 
     // シングルトン実装

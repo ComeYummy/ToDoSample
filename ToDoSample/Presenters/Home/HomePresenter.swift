@@ -34,7 +34,7 @@ class HomePresenter: HomePresenterInput {
     }
 
     // ViewControllerで表示するための情報はpresenterで保有する
-    var posts: [Post] = []
+    private(set) var posts: [Post] = []
 
 
     func fetchPosts() {
