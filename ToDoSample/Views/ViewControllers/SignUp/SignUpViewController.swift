@@ -19,17 +19,17 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        initializeUI()
-        configurePresenter()
+        setUpUI()
+        setUpPresenter()
     }
 
     // UI設定
-    private func initializeUI() {
+    private func setUpUI() {
         passwordTextField.isSecureTextEntry = true
     }
 
     // Presenterをつくる
-    private func configurePresenter() {
+    private func setUpPresenter() {
         presenter = SignUpPresenter(view: self)
     }
 
@@ -47,15 +47,17 @@ class SignUpViewController: UIViewController {
 // delegateのようにPresenterから通知を受けて動くメソッド
 extension SignUpViewController: SignUpPresenterOutput {
     func didSignUp() {
-        let vc = MainViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController = AppRootViewController()
+        //        let vc = HomeViewController()
+        //        vc.modalPresentationStyle = .fullScreen
+        //        present(vc, animated: true)
     }
-
+    
     func didLogIn() {
-        let vc = MainViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController = AppRootViewController()
+        //        let vc = HomeViewController()
+        //        vc.modalPresentationStyle = .fullScreen
+        //        present(vc, animated: true)
     }
 
     func willShowAlert(_ alert: Alert) {

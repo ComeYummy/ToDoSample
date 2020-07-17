@@ -16,13 +16,22 @@ class AppRootViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
     // ログアウト時にAppRootViewControllerに戻すため、表示のたびに動作するviewDidAppearを利用する
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let vc = SignUpViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: false, completion: nil)
+
+        if FirebaseAuthRepository.shared.isLogIn {
+            // ログイン状態のとき
+            let vc = HomeViewController()
+            let nav = UINavigationController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            present(nav, animated: false, completion: nil)
+        } else {
+            // ログアウト状態のとき
+            let vc = SignUpViewController()
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: false, completion: nil)
+        }
     }
 
 }

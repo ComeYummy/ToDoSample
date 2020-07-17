@@ -24,6 +24,10 @@ class FirebaseAuthRepository {
 
     private init() {}
 
+    var isLogIn: Bool {
+        return Auth.auth().currentUser != nil
+    }
+
     // signUp
     func signUp(email: String, password: String) {
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
@@ -55,6 +59,21 @@ class FirebaseAuthRepository {
                 //成功時の処理
                 self.delegate?.didLogin()
             }
+        }
+    }
+
+    // logOut
+    func logOut() {
+        do {
+            try Auth.auth().signOut()
+            //ログアウトに成功したらDelegateへ通知
+            delegate?.didLogout()
+        } catch let error as NSError{
+            print("サインアウトエラー:\(error)")
+            //エラーをmessageへ変換
+            let alert = Alert(title: "ログアウトエラー", message: error.localizedDescription)
+            //エラー時の処理
+            self.delegate?.didAuthError(alert)
         }
     }
 
