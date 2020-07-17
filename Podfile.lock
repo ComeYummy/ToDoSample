@@ -212,7 +212,6 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
-  - Alamofire (5.2.1)
   - BoringSSL-GRPC (0.0.7):
     - BoringSSL-GRPC/Implementation (= 0.0.7)
     - BoringSSL-GRPC/Interface (= 0.0.7)
@@ -335,7 +334,6 @@ PODS:
     - gRPC-Core/Interface (= 1.28.2)
   - gRPC-Core/Interface (1.28.2)
   - GTMSessionFetcher/Core (1.4.0)
-  - IBAnimatable (6.1.0)
   - IQKeyboardManagerSwift (6.5.5)
   - leveldb-library (1.22)
   - nanopb (1.30905.0):
@@ -343,34 +341,19 @@ PODS:
     - nanopb/encode (= 1.30905.0)
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
-  - Nuke (9.1.0)
-  - paper-onboarding (6.1.5)
   - PromisesObjC (1.2.9)
-  - RAMAnimatedTabBarController (5.2.0)
-  - SwiftDate (5.1.0)
-  - TransitionButton (0.5.3)
-  - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.2)
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Firestore
   - FirebaseFirestoreSwift
   - FontAwesome.swift
-  - IBAnimatable
   - IQKeyboardManagerSwift
-  - Nuke (~> 9.0)
-  - paper-onboarding
-  - RAMAnimatedTabBarController
-  - SwiftDate (~> 5.0)
-  - TransitionButton
-  - XLPagerTabStrip (~> 9.0)
 
 SPEC REPOS:
   trunk:
     - abseil
-    - Alamofire
     - BoringSSL-GRPC
     - Firebase
     - FirebaseAnalytics
@@ -390,21 +373,13 @@ SPEC REPOS:
     - "gRPC-C++"
     - gRPC-Core
     - GTMSessionFetcher
-    - IBAnimatable
     - IQKeyboardManagerSwift
     - leveldb-library
     - nanopb
-    - Nuke
-    - paper-onboarding
     - PromisesObjC
-    - RAMAnimatedTabBarController
-    - SwiftDate
-    - TransitionButton
-    - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
-  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   Firebase: 7cf5f9c67f03cb3b606d1d6535286e1080e57eb6
   FirebaseAnalytics: 96634d356482d4f3af8fe459a0ebf19a99c71b75
@@ -424,18 +399,11 @@ SPEC CHECKSUMS:
   "gRPC-C++": 13d8ccef97d5c3c441b7e3c529ef28ebee86fad2
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
-  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
-  Nuke: c97bf6006d31687cfa7c28507305143de27a4aa1
-  paper-onboarding: fede1799b1da6988f3788e3b71654583c6f3bce1
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
-  RAMAnimatedTabBarController: 6863a386e7ae2ab227cd60aa73ab8ff56cdacfdd
-  SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
-  TransitionButton: 36283346e17c64775a1b3bc3a7a72940a367de1f
-  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: 7904d70dc761442065a0718c96034da08036e71f
+PODFILE CHECKSUM: 6a4f31669778190d09c6400ecc15f7bc6484e796
 
 COCOAPODS: 1.8.4

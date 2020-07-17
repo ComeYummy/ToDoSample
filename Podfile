@@ -13,23 +13,23 @@ target 'ToDoSample' do
   pod 'FirebaseFirestoreSwift'
 
   # Network
-  pod 'Alamofire', '~> 5.2'
-  pod 'Nuke', '~> 9.0'
+#  pod 'Alamofire', '~> 5.2'
+#  pod 'Nuke', '~> 9.0'
 
   # Linter
   # pod 'SwiftLint'
 
   # Date
-  pod 'SwiftDate', '~> 5.0'
+#  pod 'SwiftDate', '~> 5.0'
 
   # UI
   pod 'IQKeyboardManagerSwift'
   pod 'FontAwesome.swift'
-  pod 'IBAnimatable'
-  pod 'RAMAnimatedTabBarController'
-  pod 'TransitionButton'
-  pod 'paper-onboarding'
-  pod 'XLPagerTabStrip', '~> 9.0'
+#  pod 'IBAnimatable'
+#  pod 'RAMAnimatedTabBarController'
+#  pod 'TransitionButton'
+#  pod 'paper-onboarding'
+#  pod 'XLPagerTabStrip', '~> 9.0'
   
 
   target 'ToDoSampleTests' do
