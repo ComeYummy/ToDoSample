@@ -9,20 +9,18 @@
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-protocol FirebasePostRepositoryDelegate: class {
-    func didCreatePost()
-    func didReadPosts(_ posts: [Post])
-    func didUpdatePost()
-    func didDeletePost()
-    func didPostError(_ alert: Alert)
-}
+//protocol FirebasePostRepositoryDelegate: class {
+//    func didCreatePost()
+//    func didReadPosts(_ posts: [Post])
+//    func didUpdatePost()
+//    func didDeletePost()
+//    func didPostError(_ alert: Alert)
+//}
 
 class FirebasePostRepository {
 
     // シングルトン実装
     static var shared: FirebasePostRepository = FirebasePostRepository()
-    // delegate利用
-    weak var delegate: FirebasePostRepositoryDelegate?
 
     private init() {}
 
@@ -31,12 +29,12 @@ class FirebasePostRepository {
 
     let postsCollectionName = "Posts"
 
-    func fetchPosts() {
+    func fetchPosts(completion: @escaping ([Post], Alert?) -> Void) {
         //作成日時の降順に並べ替えて取得する
         db.collection(postsCollectionName).order(by: "createdAt", descending: true).getDocuments { (querySnapShot, error) in
             if let error = error as NSError? {
                 guard let alert = self.convertToErrorAlert(error) else { return }
-                self.delegate?.didPostError(alert)
+                completion([], alert)
             } else {
                 //データ取得に成功
                 var posts: [Post] = []
@@ -53,14 +51,14 @@ class FirebasePostRepository {
                         print("decode失敗エラー:\(error)")
                     }
                 }
-                self.delegate?.didReadPosts(posts)
+                completion(posts, nil)
             }
         }
     }
 
-    func deletePost(_ taskID: String) {
+    func deletePost(_ taskID: String, completion: @escaping (Alert?) -> Void) {
         db.collection(postsCollectionName).document(taskID).delete()
-        delegate?.didDeletePost()
+        completion(nil)
     }
 
 

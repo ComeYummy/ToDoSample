@@ -31,8 +31,6 @@ class HomePresenter: HomePresenterInput {
 
     init(view: HomePresenterOutput) {
         self.view = view
-        FirebasePostRepository.shared.delegate = self
-        FirebaseAuthRepository.shared.delegate = self
     }
 
     // ViewControllerで表示するための情報はpresenterで保有する
@@ -40,57 +38,35 @@ class HomePresenter: HomePresenterInput {
 
 
     func fetchPosts() {
-        FirebasePostRepository.shared.fetchPosts()
+        FirebasePostRepository.shared.fetchPosts() { posts, alert in
+            if let alert = alert {
+                // エラーの場合
+                self.view.willShowAlert(alert)
+            } else {
+                // 成功
+                self.posts = posts
+                self.view.didFetchPosts()
+            }
+        }
     }
 
     func deletePost(at index: Int) {
-        FirebasePostRepository.shared.deletePost(posts[index].taskID)
+        FirebasePostRepository.shared.deletePost(posts[index].taskID) { alert in
+            self.posts.remove(at: index)
+            self.view.didUpdatePosts()
+        }
     }
 
     func logOut() {
-        FirebaseAuthRepository.shared.logOut()
-    }
+        FirebaseAuthRepository.shared.logOut()  { alert in
+            if let alert = alert {
+                // エラーの場合
+                self.view.willShowAlert(alert)
+            } else {
+                // 成功
+                self.view.didLogOut()
+            }
+        }
 
-
-}
-
-extension HomePresenter: FirebasePostRepositoryDelegate {
-    func didCreatePost() {
-
-    }
-
-    func didReadPosts(_ posts: [Post]) {
-        view.didFetchPosts()
-    }
-
-    func didUpdatePost() {
-        view.didUpdatePosts()
-    }
-
-    func didDeletePost() {
-        view.didUpdatePosts()
-    }
-
-    func didPostError(_ alert: Alert) {
-        view.willShowAlert(alert)
     }
 }
-
-extension HomePresenter: FirebaseAuthRepositoryDelegate {
-    func didSignUp() {
-    }
-
-    func didLogin() {
-    }
-
-    func didLogout() {
-        view.didLogOut()
-    }
-
-    func didAuthError(_ alert: Alert) {
-        view.willShowAlert(alert)
-    }
-
-
-}
-

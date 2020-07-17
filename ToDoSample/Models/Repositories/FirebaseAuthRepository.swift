@@ -8,19 +8,10 @@
 
 import FirebaseAuth
 
-protocol FirebaseAuthRepositoryDelegate: class {
-    func didSignUp()
-    func didLogin()
-    func didLogout()
-    func didAuthError(_ alert: Alert)
-}
-
 class FirebaseAuthRepository {
 
     // シングルトン実装
     static var shared: FirebaseAuthRepository = FirebaseAuthRepository()
-    // delegate利用
-    weak var delegate: FirebaseAuthRepositoryDelegate?
 
     private init() {}
 
@@ -29,7 +20,7 @@ class FirebaseAuthRepository {
     }
 
     // signUp
-    func signUp(email: String, password: String) {
+    func signUp(email: String, password: String, completion: @escaping (Alert?) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
             //NSError?型にキャストしたerrorをアンラップ
             if let error = error as NSError? {
@@ -37,16 +28,16 @@ class FirebaseAuthRepository {
                 //エラーをmessageへ変換
                 guard let alert = self.convertToErrorAlert(error) else { return }
                 //エラー時の処理
-                self.delegate?.didAuthError(alert)
+                completion(alert)
             } else {
                 //成功時の処理
-                self.delegate?.didSignUp()
+                completion(nil)
             }
         }
     }
 
     // logIn
-    func logIn(email: String, password: String) {
+    func logIn(email: String, password: String, completion: @escaping (Alert?) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             //NSError?型にキャストしたerrorをアンラップ
             if let error = error as NSError? {
@@ -54,26 +45,26 @@ class FirebaseAuthRepository {
                 //エラーをmessageへ変換
                 guard let alert = self.convertToErrorAlert(error) else { return }
                 //エラー時の処理
-                self.delegate?.didAuthError(alert)
+                completion(alert)
             } else {
                 //成功時の処理
-                self.delegate?.didLogin()
+                completion(nil)
             }
         }
     }
 
     // logOut
-    func logOut() {
+    func logOut(completion: @escaping (Alert?) -> Void) {
         do {
             try Auth.auth().signOut()
-            //ログアウトに成功したらDelegateへ通知
-            delegate?.didLogout()
+            // logOut成功
+            completion(nil)
         } catch let error as NSError{
             print("サインアウトエラー:\(error)")
             //エラーをmessageへ変換
             let alert = Alert(title: "ログアウトエラー", message: error.localizedDescription)
             //エラー時の処理
-            self.delegate?.didAuthError(alert)
+            completion(alert)
         }
     }
 

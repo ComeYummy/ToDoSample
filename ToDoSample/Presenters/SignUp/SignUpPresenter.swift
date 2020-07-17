@@ -28,7 +28,6 @@ class SignUpPresenter: SignUpPresenterInput {
 
     init(view: SignUpPresenterOutput) {
         self.view = view
-        FirebaseAuthRepository.shared.delegate = self
     }
 
     func didTapSignUpButton(email: String, password: String) {
@@ -37,7 +36,15 @@ class SignUpPresenter: SignUpPresenterInput {
             view.willShowAlert(alert)
         } else {
             // validationエラーではない場合はRepositoryへ
-            FirebaseAuthRepository.shared.signUp(email: email, password: password)
+            FirebaseAuthRepository.shared.signUp(email: email, password: password) { alert in
+                if let alert = alert {
+                    // エラーの場合
+                    self.view.willShowAlert(alert)
+                } else {
+                    // 成功
+                    self.view.didSignUp()
+                }
+            }
         }
     }
 
@@ -47,7 +54,15 @@ class SignUpPresenter: SignUpPresenterInput {
             view.willShowAlert(alert)
         } else {
             // validationエラーではない場合はRepositoryへ
-            FirebaseAuthRepository.shared.logIn(email: email, password: password)
+            FirebaseAuthRepository.shared.logIn(email: email, password: password) { alert in
+                if let alert = alert {
+                    // エラーの場合
+                    self.view.willShowAlert(alert)
+                } else {
+                    // 成功
+                    self.view.didLogIn()
+                }
+            }
         }
     }
 
@@ -62,24 +77,5 @@ class SignUpPresenter: SignUpPresenterInput {
             //emailとメールアドレスのいずれも入力されていれば、新規登録処理
             return nil
         }
-    }
-}
-
-// Delegateメソッド(FirebaseAuthRepositoryから通知を受けて動くメソッド)
-extension SignUpPresenter: FirebaseAuthRepositoryDelegate {
-    func didSignUp() {
-        view.didSignUp()
-    }
-
-    func didLogin() {
-        view.didLogIn()
-    }
-
-    func didLogout() {
-        // 利用しないdelegateメソッド
-    }
-
-    func didAuthError(_ alert: Alert) {
-        view.willShowAlert(alert)
     }
 }
